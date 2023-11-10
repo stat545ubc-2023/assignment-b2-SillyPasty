@@ -1,7 +1,7 @@
 Package: groupandcount
 Type: Package
 Title: GroupAndCount
-Version: 0.1.0
+Version: 1.0.0
 Author: Yubo Wang
 Maintainer: wangyb27@student.ubc.ca
 Description: Group the input data with specified column and count each group's occurrence

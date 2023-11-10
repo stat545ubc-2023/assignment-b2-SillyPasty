@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+library(groupandcount)
+library(dplyr)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+
+# Groupandcount
+
+The goal of the groupandcount package is to group the input data with specified column and count each group's occurrence
+
+## Installation
+
+You can install the development version of groupandcount from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2023/assignment-b2-SillyPasty", quiet = TRUE)
+
+```
+
+
+## Examples
+
+This example shows group the penguins dataset according to island column and count the rows for each island.
+
+```{R}
+library("palmerpenguins")
+test1 <- group_and_count(penguins, island)
+print(test1)
+```
+
+This example shows group the penguins dataset according to island and sex column and count the rows for the columns.
+
+```{R}
+test2 <- group_and_count(penguins, island, sex)
+print(test2)
+```
+
+
